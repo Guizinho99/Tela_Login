@@ -1,0 +1,1 @@
+Meu Primeiro Projeto foi iniciado dia 09/12/2024 e finalizado no dia 17/12/2024, eu estava codificando em média 3 horas por dia. Foram 5 Telas (Login, Cadastro, Senha, Redefinição e Tela Inicial)

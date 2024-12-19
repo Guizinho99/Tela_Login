@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/montanha.png">
+</head>
+
+<body class="tela">
+    <main class="telaS">
+        <form action="#">
+            <section>
+                <h1 class="crieS">Crie sua Senha</h1>
+                <div class="container-btn">
+                    <div class="senha">
+                        <label for="for-user" class="inp-user">
+                            <p>Senha (6 caracteres)</p>
+                            <input class="in" type="password" name="senha" id="senha" maxlength="6" required>
+                            <i class="bx bxs-lock-alt"></i>
+                    </div>
+
+                    <div class="senha">
+                        <label for="for-confirm" class="inp-confirm">
+                            <p>Confirme a senha</p>
+                            <input class="in" type="password" name="confirm" id="confirm" maxlength="6" required>
+                            <span class="olho-icon2" id="olho2" onclick="OlharSenha2()"><i class='bx bxs-hide'></i></span>
+                            <i class="bx bxs-lock-alt"></i>
+                    </div>
+                </div>
+
+                <div class="termos">
+                    <label>
+                        <input type="radio" required>
+                        Concordo com os Termos de Uso
+                    </label>
+                </div>
+
+                <button id="togow" type="submit" class="fim">
+                    Finalizar Cadastro
+                </button>
+            </section>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

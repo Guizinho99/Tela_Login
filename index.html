@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/montanha.png">
+</head>
+
+<body class="tela">
+    <main class="TelaL">
+        <form action="#">
+            <section>
+                <div class="titulo">
+                    <h1>Login Estrada da Vida</h1>
+                </div>
+
+                <div class="icon">
+                    <a href="Tela_Inicia.html" id="voltar" class="home" aria-label="Voltar pra tela inicial">
+                        <i class='bx bx-home'></i>
+                    </a>
+                </div>
+
+                <div class="container">
+                    <div class="user">
+                        <label for="for-user" class="inp-user">
+                            <input class="in" type="text" name="user" id="user" placeholder="Usuário" maxlength="12" required>
+                            <i class="bx bxs-user"></i>
+                    </div>
+
+                    <div class="user">
+                        <label for="for-senha" class="inp-senha">
+                            <input class="in" type="password" name="senha" id="senha" placeholder="Senha" maxlength="6" required>
+                            <span class="olho-icon" id="olho" onclick="OlharSenha()"><i class='bx bxs-hide'></i></span>
+                            <i class="bx bxs-lock-alt"></i>
+                    </div>
+
+                    <div class="lembrar">
+                        <label>
+                            <input type="radio">
+                            Lembre de mim
+                        </label>
+
+                        <a href="Redefinir.html">Esqueci minha senha</a>
+                    </div>
+                </div>
+
+                <button id="fazer" type="submit" class="logar">
+                    Fazer Login
+                </button>
+            </section>
+
+            <article>
+                <div class="logue">
+                    <p>Não possui uma conta?<a href="Tela_de_Cadastro.html"> Cadastre-se!</a></p>
+                </div>
+            </article>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

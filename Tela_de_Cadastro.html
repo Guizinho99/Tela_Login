@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/montanha.png">
+</head>
+
+<body class="tela">
+    <main class="telaC">
+        <form action="#">
+            <section>
+                <h1 class="h1">Cadastro Estrada da Vida</h1>
+                <div class="container">
+                    <div class="form">
+                        <label for="for-nome" class="inp-nome">
+                            <p>Nome Completo</p> 
+                            <input class="in" type="text" name="nome" id="nome" placeholder="Vanderson da Silva Ferreira" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="for-data" class="inp-data">
+                            <p>Data de Nascimento</p> 
+                            <input class="in" type="date" name="date" id="date">
+                    </div>
+
+                    <div class="form">
+                        <label for="for-email" class="inp-email">
+                            <p>Email</p> 
+                            <input class="in" type="email" name="email" id="email" placeholder="vanderson@gmail.com" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="for-telefone" class="inp-telefone">
+                            <p>Telefone</p> 
+                            <input class="in" type="tel" name="tel" id="tel" placeholder="1199999-9999" maxlength="11" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="for-user" class="inp-user">
+                            <p>Usuário (12 caracteres)</p> 
+                            <input class="in" type="text" name="user" id="user" placeholder="Vanzinho98" maxlength="12" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="for-sexo" class="inp-sexo">
+                            <p>Sexo</p>
+                            <input id="sex" type="text" list="Sexo">
+                            <datalist id="Sexo">
+                                <option value="Masculino"></option>
+                                <option value="Feminino"></option>
+                                <option value="Outro"></option>
+                            </datalist>
+                    </div>
+                </div>
+
+                <button id="prox" type="submit" class="next">
+                    Próximo
+                </button>
+            </section>
+
+            <article>
+                <div class="login">
+                    <p>Tem uma conta?<a href="index.html"> Entre!</a></p>
+                </div>
+            </article>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

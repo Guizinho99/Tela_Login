@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.tela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('/img/estrada.jpg');
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área da tela */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+    /* Centraliza a imagem no fundo */
+}
+
+.TelaL {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    padding: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+/* Inicio Index */
+
+/* Inicio Home */
+
+.titulo {
+    margin-top: 15px;
+}
+
+.home {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.home i {
+    position: fixed;
+    font-size: 25px;
+    right: 18px;
+    top: 3%;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* Fim Home */
+
+.container {
+    margin-bottom: 20px;
+}
+
+.senha {
+    padding: 10px;
+}
+
+.user {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+span {
+    position: relative;
+    width: 1%;
+    height: 50px;
+}
+
+.olho-icon {
+    position: absolute;
+    font-size: 22px;
+    left: 483px;
+    top: -1%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.olho-icon2 {
+    position: absolute;
+    font-size: 22px;
+    left: 495px;
+    top: 17%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.user input {
+    width: 75%;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.user i {
+    position: absolute;
+    font-size: 22px;
+    right: 58px;
+    top: 20%;
+}
+
+input::placeholder {
+    background-color: transparent;
+    color: #A4A4A4;
+}
+
+.lembrar {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 5px;
+}
+
+.logar {
+    margin-top: 30px;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.logar:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.logue {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: white;
+}
+
+/* Fim Index */
+
+/* Inicio Cadastro */
+
+.telaC {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 450px;
+    height: 630px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.form input {
+    width: 75%;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.container p {
+    text-align: start;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.lembre {
+    margin-right: 51%;
+    color: white;
+    margin-top: 5px;
+}
+
+.next {
+    margin-top: 10px;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.next:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.login {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* Fim Cadastro
+
+/* Inicio Senha/Esqueci */
+
+.telaS {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.crieS {
+    margin-bottom: -20px;
+}
+
+.container-btn p {
+    text-align: start;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.senha {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.senha input {
+    width: 75%;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.senha i {
+    position: absolute;
+    font-size: 22px;
+    right: 65px;
+    top: 60%;
+}
+
+.fim {
+    margin-top: 80px;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.fim:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.termos {
+    margin-right: 100px;
+    color: white;
+    margin-top: 8px;
+}
+
+.redefinir {
+    margin-top: 30px;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.redefinir:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+/* Fim Senha/Esqueci */
+
+/* Inicio Tela Inicial */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('/img/estrada.jpg');
+    /* Link direto da imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra todo o fundo */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    height: 10vh;
+    /* cobre a altura da janela */
+    padding: 10px;
+
+}
+
+.casa {
+    color: white;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*.casa i {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 20%;
+}*/
+
+.TelaI {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    width: 99%;
+    height: 100%;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12px;
+    margin-right: 4px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.conteudo {
+    text-align: justify;
+    margin: 20px 80px;
+}
+
+.dimensao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caminhos {
+    width: 550px;
+    height: 400px;
+    padding: 10px;
+}
+
+.familia {
+    width: 650px;
+    height: 500px;
+    padding: 10px;
+}
+
+hr {
+    width: 1300px;
+    margin-left: 80px;
+}
+
+.lorem {
+    color: black;
+}
+
+/* Inicio Footer */
+
+footer {
+    margin-top: 20px;
+}
+
+.footer-container {
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-around;
+    background-image: url('/img/estrada.jpg');
+    /* Link direto da imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra todo o fundo */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    height: 10vh;
+    /* cobre a altura da janela */
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.create {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Fim Footer */
+
+/* Fim Tela Inicial */
