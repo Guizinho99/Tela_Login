@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Inicio Index */
+
 body {
     overflow-x: hidden;
 }
@@ -38,8 +40,6 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
 }
-
-/* Inicio Index */
 
 /* Inicio Home */
 
@@ -172,6 +172,27 @@ a:hover {
 
 p {
     color: white;
+}
+
+.spinner, .spinner1, .spinner2, .spinner3 {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    margin-left: 100px;
+    border: 2px solid transparent;
+    border-top-color: black;
+    border-left-color: black;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 /* Fim Index */
@@ -368,13 +389,6 @@ p {
     font-weight: 600;
 }
 
-/*.casa i {
-    color: white;
-    font-size: 30px;
-    padding: 5px;
-    margin-top: 20%;
-}*/
-
 .TelaI {
     font-size: 20px;
     letter-spacing: 2px;
@@ -482,3 +496,194 @@ footer {
 /* Fim Footer */
 
 /* Fim Tela Inicial */
+
+
+/* Responsivo Inicio */
+
+@media (max-width: 1024px) {
+
+    header, .TelaI, footer {
+        overflow-x: hidden;
+    }
+
+    main {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .conteudo {
+        text-align: justify;
+        margin: 20px 42px;
+    }
+
+    .caminhos {
+        width: 500px;
+        height: 400px;
+        padding: 3px;
+    }
+    
+    .familia {
+        width: 500px;
+        height: 400px;
+        padding: 3px;
+    }
+
+    small {
+        margin: 0 20px 10px;
+        font-size: 13px;
+    }
+
+    hr {
+        margin-left: 4%;
+        width: 91.3%;
+    }
+
+    .telaC {
+        width: 400px;
+        height: 600px;
+    }
+
+    .form input {
+        width: 75%;
+        font-size: 12px;
+    }
+    
+    .next {
+        margin-top: 10px;
+        width: 50%;
+        height: 35px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header, .TelaI, footer {
+        overflow-x: hidden;
+    }
+
+    main {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .conteudo {
+        text-align: justify;
+        margin: 20px 30px;
+    }
+
+    .caminhos {
+        width: 400px;
+        height: 300px;
+        padding: 3px;
+    }
+    
+    .familia {
+        width: 400px;
+        height: 300px;
+        padding: 3px;
+    }
+
+    small {
+        margin: 0 180px 10px;
+    }
+
+    hr {
+        margin-left: 4%;
+        width: 91%;
+    }
+
+    .telaC {
+        width: 400px;
+        height: 600px;
+    }
+
+    .form input {
+        width: 75%;
+        font-size: 10px;
+    }
+    
+    .next {
+        margin-top: 10px;
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header, .TelaI, footer {
+        overflow-x: hidden;
+    }
+
+    main {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .conteudo {
+        text-align: justify;
+        margin: 20px 30px;
+        font-size: 14px;
+    }
+
+    .caminhos {
+        width: 200px;
+        height: 200px;
+        padding: 3px;
+    }
+    
+    .familia {
+        width: 200px;
+        height: 200px;
+        padding: 3px;
+    }
+
+    small {
+        margin: 0 90px 10px;
+    }
+
+    hr {
+        margin-left: 6%;
+        width: 87%;
+    }
+
+    .telaC {
+        width: 400px;
+        height: 600px;
+    }
+
+    .form input {
+        width: 75%;
+        font-size: 10px;
+    }
+    
+    .next {
+        margin-top: 10px;
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+}
+
+/* Responsivo Fim */

@@ -72,6 +72,11 @@ if (msg) {
         } else {
             sexo.style.border = '2px solid lime';
         }
+
+        const spinner2 = msg.querySelector('.spinner2');
+        msg.innerHTML = ''; // Limpa o conteúdo do botão
+        msg.appendChild(spinner2); // Adiciona o spinner ao botão
+        spinner2.style.display = 'block'; // Mostra o spinner
         redirection("Estamos quase lá, agora você vai criar uma senha.", "senha.html", 4000);
     });
 }
@@ -112,6 +117,10 @@ if (next) {
     next.addEventListener("click", function (event) {
         event.preventDefault();
         if (validatePasswordFields()) {
+            const spinner3 = next.querySelector('.spinner3');
+            next.innerHTML = ''; // Limpa o conteúdo do botão
+            next.appendChild(spinner3); // Adiciona o spinner ao botão
+            spinner3.style.display = 'block'; // Mostra o spinner
             redirection("Parabéns você realizou o cadastro em nosso site!", "index.html", 4000);
         }
     });
@@ -121,6 +130,10 @@ if (alerta) {
     alerta.addEventListener("click", function (event) {
         event.preventDefault();
         if (validatePasswordandEmailFields()) {
+            const spinner1 = alerta.querySelector('.spinner1');
+            alerta.innerHTML = ''; // Limpa o conteúdo do botão
+            alerta.appendChild(spinner1); // Adiciona o spinner ao botão
+            spinner1.style.display = 'block'; // Mostra o spinner
             redirection("Parabéns você redefiniu sua senha! Você será redirecionado para a tela de login.", "index.html", 4000);
         }
     });
@@ -149,6 +162,10 @@ if (login) {
             return;
         }
 
+        const spinner = login.querySelector('.spinner');
+        login.innerHTML = ''; // Limpa o conteúdo do botão
+        login.appendChild(spinner); // Adiciona o spinner ao botão
+        spinner.style.display = 'block'; // Mostra o spinner
         redirection(`Login realizado ${usuario.value}, fico feliz que voltou!`, "Tela_Inicia.html", 4000);
     });
 }
