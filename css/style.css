@@ -115,6 +115,7 @@ span {
     border-radius: 50px;
     letter-spacing: 2px;
     text-align: start;
+    font-weight: bold;
 }
 
 .user i {
@@ -127,6 +128,7 @@ span {
 input::placeholder {
     background-color: transparent;
     color: #A4A4A4;
+    font-weight: bold;
 }
 
 .lembrar {
@@ -178,12 +180,23 @@ p {
     display: flex;
     width: 10px;
     height: 10px;
-    margin-left: 100px;
     border: 2px solid transparent;
     border-top-color: black;
     border-left-color: black;
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
+}
+
+.spinner2 {
+    margin-left: 105px;
+}
+
+.spinner3, .spinner1 {
+    margin-left: 105px;
+}
+
+.spinner {
+    margin-left: 100px;
 }
 
 @keyframes spin {
@@ -221,6 +234,7 @@ p {
     border-radius: 50px;
     letter-spacing: 2px;
     text-align: start;
+    font-weight: bold;
 }
 
 .container p {
@@ -305,6 +319,7 @@ p {
     border-radius: 50px;
     letter-spacing: 2px;
     text-align: start;
+    font-weight: bold;
 }
 
 .senha i {
@@ -422,6 +437,7 @@ small{
 .conteudo {
     text-align: justify;
     margin: 20px 80px;
+    text-indent: 30px;
 }
 
 .dimensao {
@@ -626,6 +642,10 @@ footer {
     header, .TelaI, footer {
         overflow-x: hidden;
     }
+    
+    .criador, .perfil {
+        margin-top: 15px;
+    }
 
     main {
         overflow-y: hidden;
@@ -633,7 +653,7 @@ footer {
     }
 
     h2{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .conteudo {
@@ -655,7 +675,8 @@ footer {
     }
 
     small {
-        margin: 0 90px 10px;
+        margin: 0 10px 10px;
+        text-align: center;
     }
 
     hr {
@@ -663,14 +684,19 @@ footer {
         width: 87%;
     }
 
+    .tela{
+        overflow-y: hidden;
+    }
+
     .telaC {
         width: 400px;
-        height: 600px;
+        height: 680px;
+        overflow-y: hidden;
     }
 
     .form input {
-        width: 75%;
-        font-size: 10px;
+        width: 80%;
+        font-size: 12px;
     }
     
     .next {

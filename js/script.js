@@ -53,6 +53,10 @@ if (msg) {
             error("O campo Telefone está vazio!", "linear-gradient(to right, #cd1809, #a01006)");
             number.style.border = '2px solid red';
             return;
+        } else if (number.value.trim().length >= 1 || number.value.trim().length < 11) {
+            error("Número de telefone deve conter pelo menos 11 dígitos!", "linear-gradient(to right, #cd1809, #a01006)");
+            number.style.border = '2px solid red !important';
+            return;
         } else {
             number.style.border = '2px solid lime';
         }
@@ -88,7 +92,18 @@ if (data) {
     data.addEventListener("blur", () => validateField(data));
 }
 if (number) {
-    number.addEventListener("blur", () => validateField(number));
+    number.addEventListener("blur", () => {
+        if (number.value.trim() === "") {
+            error("O campo Telefone está vazio!", "linear-gradient(to right, #cd1809, #a01006)");
+            number.style.border = '2px solid red';
+            return;
+        } else if (number.value.trim().length >= 1 & number.value.trim().length < 11) {
+            number.style.border = '2px solid red';
+            error("Número de telefone deve conter pelo menos 11 dígitos!", "linear-gradient(to right, #cd1809, #a01006)");
+        } else {
+            number.style.border = '2px solid lime';
+        }
+    });
 }
 if (person) {
     person.addEventListener("blur", () => validateField(person));
