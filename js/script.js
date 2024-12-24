@@ -53,7 +53,7 @@ if (msg) {
             error("O campo Telefone está vazio!", "linear-gradient(to right, #cd1809, #a01006)");
             number.style.border = '2px solid red';
             return;
-        } else if (number.value.trim().length >= 1 || number.value.trim().length < 11) {
+        } else if (number.value.trim().length >= 1 && number.value.trim().length < 11) {
             error("Número de telefone deve conter pelo menos 11 dígitos!", "linear-gradient(to right, #cd1809, #a01006)");
             number.style.border = '2px solid red !important';
             return;
@@ -97,9 +97,10 @@ if (number) {
             error("O campo Telefone está vazio!", "linear-gradient(to right, #cd1809, #a01006)");
             number.style.border = '2px solid red';
             return;
-        } else if (number.value.trim().length >= 1 & number.value.trim().length < 11) {
+        } else if (number.value.trim().length >= 1 && number.value.trim().length < 11) {
             number.style.border = '2px solid red';
             error("Número de telefone deve conter pelo menos 11 dígitos!", "linear-gradient(to right, #cd1809, #a01006)");
+            return;
         } else {
             number.style.border = '2px solid lime';
         }

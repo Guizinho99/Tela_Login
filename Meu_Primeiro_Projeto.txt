@@ -2,4 +2,6 @@
 
 2. Atualizações feitas no 2° COMMIT, as atualizações duraram entre o dia 21/12/2024 a 22/12/2024, o projeto agora é acessível para tela de 480px com as medidas ideias, 768x e 1024px (Telas Mobiles, Tablets e Desktops), também foi colocado uma animação "spinner" nos botões quando clicavél, foi adicionado também definições na hora do compartilhamento.
 
-3. Atualizações feita no 3° COMMIT, as atualizações foram feitas no dia 23/12/2024, foi melhorado a responsividade (havia alguns pequenos itens fora de lugar), foi arrumado a descrição das imagens, o tamanho da Tela de Cadastro, o efeito spinner centralizado nos botões, separação por paragrafos e adicionado o passo de recuo nos textos e o campo telefone foi aprimorado. 
+3. Atualizações feita no 3° COMMIT, as atualizações foram feitas no dia 23/12/2024, foi melhorado a responsividade (havia alguns pequenos itens fora de lugar), o efeito spinner centralizado nos botões, separação por paragrafos e adicionado o passo de recuo nos textos e o campo telefone foi aprimorado. 
+
+4. Atualizaçõesfeita no 4° COMMIT, atualizações feitas logo após o 3° COMMIT em 23/12/2024. Atualização do header para 480px, tamanha das letras dos titulos, tela de cadastro para 480px, descrição imagens e o BUG do telefone.

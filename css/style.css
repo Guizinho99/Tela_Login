@@ -639,12 +639,21 @@ footer {
 
 @media (max-width: 480px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+
     header, .TelaI, footer {
         overflow-x: hidden;
     }
     
     .criador, .perfil {
-        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
     }
 
     main {
@@ -653,13 +662,14 @@ footer {
     }
 
     h2{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .conteudo {
         text-align: justify;
         margin: 20px 30px;
         font-size: 14px;
+        line-height: 21px;
     }
 
     .caminhos {
@@ -676,7 +686,6 @@ footer {
 
     small {
         margin: 0 10px 10px;
-        text-align: center;
     }
 
     hr {
@@ -690,7 +699,7 @@ footer {
 
     .telaC {
         width: 400px;
-        height: 680px;
+        height: 710px;
         overflow-y: hidden;
     }
 
